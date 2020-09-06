@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+body
+{
+	color:white;
+	text-align: left;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 700;
+	/* background: url("img/thomas-bnt-RQ7Y2t7Kdlk-unsplash.jpg");
+	background-size: cover; */
+}
+.adContainer
+{
+	position: absolute;
+	left:5px;
+	top:5px;
+	text-shadow: 0 2px black;
+	
+	animation: fadeIn 1s 0.5s backwards;
+}
+.adText
+{
+	animation: fadeIn 1s 1.5s normal backwards, fadeIn 1s 29s reverse forwards;
+}
+.watermarkContainer
+{
+	position: absolute;
+	right:5px;
+	top:5px;
+	opacity: 0.75;
+
+	animation: fadeIn 1s 0.5s backwards;
+}
+
+.alertContainer
+{
+	position: absolute;
+	left: 0;
+	top:100px;
+}
+.alertUser
+{
+	display: inline-block;
+	background: #8e44ad;
+	background-image: linear-gradient(to bottom right, #27ae60, #2980b9);
+	font-size: 36px;
+	padding:15px;
+	border-radius: 0 6px 6px 0;
+
+	animation: fadeInRight 1s 0.5s backwards, fadeInRight 1s 9s reverse forwards;
+}
+.alertText
+{
+	display: inline-block;
+	background:black;
+	padding:5px 15px;
+	border-radius: 0 2px 2px 0;
+
+	animation: fadeInRight 1s 0.75s backwards, fadeInRight 1s 8.75s reverse forwards;;
+}
+
+@keyframes fadeIn
+{
+    from
+	{
+		filter:opacity(0);
+	}
+	to
+	{
+		filter:opacity(1);
+	}
+}
+@keyframes fadeInRight
+{
+    from
+	{
+		transform: translateX(-3vw);
+		filter:opacity(0);
+	}
+	to
+	{
+		filter:opacity(1);
+	}
+}

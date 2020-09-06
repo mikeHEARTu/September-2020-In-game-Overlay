@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Live breakscreen for Twitch.tv/aznmike">
+	<meta name="keywords" content="twitch, overlay">
+	<meta name="author" content="Michael Macasiano">
+	<title>Video games are awful</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<script>
+	var slideIndex = 0;
+
+	function carousel() {
+	var i;
+	var x = document.getElementsByClassName("adText");
+	for (i = 0; i < x.length; i++) {
+	x[i].style.display = "none";
+	}
+	slideIndex++;
+	if (slideIndex > x.length) {slideIndex = 1}
+	x[slideIndex-1].style.display = "inline";
+	setTimeout(carousel, 600000); // Change image every 10 minutes
+	}
+</script>
+
+<body onload="carousel()">
+	<div class="adContainer">
+		#ad<span class="adText"> - review code provided by the developer</span><span class="adText"></span>
+	</div>
+
+	<img class="watermarkContainer" src="img/mikeheartu-m.gif">
+
+	<div class="alertContainer">
+		<div class="alertUser">Username</div>
+		<br>
+		<div class="alertText">new subscriber!</div>
+	</div>
+</body>
+
+</html>
